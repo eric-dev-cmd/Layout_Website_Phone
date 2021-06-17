@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Boostrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1/css/bootstrap.min.css">
+    <title>Chi tiết sản phẩm - QMobile Việt Nam</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item d-flex align-items-center">
+                            <i class="fas fa-store fs-150"></i>&nbsp;
+                            <span class="header__navbar-title--no-pointer header__navbar-item-separate">Cửa hàng</span>
+                        </li>
+
+                        <li
+                            class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate d-flex align-items-center">
+                            <i class="fas fa-mobile-alt"></i>&nbsp;
+                            Tải ứng dụng
+                            <!-- HEADER QR CODE -->
+                            <div class="header__qr">
+                                <img class="header__qr-img" src="./assets/img/code.png" alt="QR CODE">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img class="header__qr-download-img" src="./assets/img/appstore.png"
+                                            alt="App Store">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img class="header__qr-download-img" src="./assets/img/googleplay.png"
+                                            alt="Google Play">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item d-flex align-items-center">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="#" class="header__navbar_icon-link">
+                                <i class="header_navbar-icon fab fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="header__navbar_icon-link">
+                                <i class="header_navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-no ">
+                            <a href="#" class="header__navbar-item-link d-flex align-items-center">
+                                <i class="header_navbar-icon far fa-bell">&nbsp;</i>
+                                Thông báo
+                            </a>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link d-flex align-items-center">
+                                <i class="header_navbar-icon far fa-question-circle">&nbsp;</i>
+                                Trợ giúp
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item header__navbar-item-bold header__navbar-item-separate">
+                            <a href="dangky.html" class="text-decoration-none text-white"><span>Đăng ký</span></a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-bold" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Đăng nhập
+                        </li>
+
+
+                    </ul>
+
+
+                </nav>
+
+                <div class="header-with-search ">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header-mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="head_logo-link">
+                            <img src="./assets/img/logo.png" alt="Qmobile Logo PNG" class="header_logo-link-img">
+                        </a>
+                    </div>
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="mobile__check-header">
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Bạn tìm gì...">
+                            <div class="header__search-history">
+                                <h3 class="header__search-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-list">
+                                    <li class="header__search-item">
+                                        <a href="#">Xiaomi</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="#">Samsung</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="#">iphone 12</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">
+                                Trong nước
+                            </span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            <ul class="header__search-option" style="margin-top: 0.7rem;">
+                                <li class="header__search-option-item header__search-option-item-active">
+                                    <span>Trong nước</span>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài nước</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- Cart Layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list-none-cart-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/nocart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+                                <!-- Has cart:  -->
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/oppo-a93-trang-14-600x600.jpg" alt="Oppo A93"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Điện thoại Samsung Galaxy S21 5G</h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">14.990.000₫</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span class="vt">S21 5G
+                                                        128GB</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/samsung-galaxy-s21.jpg" alt="093.969.6789"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">OPPO A93</h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">9.599.000₫</span>
+                                                    <!-- <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>     -->
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span
+                                                        class="mobi1"></span><span class="mobi2">AMOLED6.43"Full
+                                                        HD+</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/iphone12_pro_max.jpg" alt="Iphone 12 Pro Max"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Điện thoại iPhone 12 Pro Max 128GB
+                                                </h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">30.990.000₫</span>
+                                                    <!-- <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>     -->
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span
+                                                        class="mobi1"></span><span class="mobi2">OLED6.7"Super Retina
+                                                        XDR</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <a class="btn btn--primary btn1">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <ul class="list-inline d-flex align-items-center justify-content-evenly">
+                        <li class="list-inline-item"><a href="/"
+                                class="text-decoration-none fs-16 text-white fw-bold">Trang
+                                chủ</a>
+                        </li>
+                        <li class="list-inline-item"><a href="product.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Điện thoại</a>
+                        </li>
+                        <li class="list-inline-item"><a href="index.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Laptop</a>
+                        </li>
+                        <li class="list-inline-item"><a href="index.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Tablet</a>
+                        </li>
+                        <li class="list-inline-item"><a href="danhsachsanpham.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Danh sách sản phẩm</a>
+                        </li>
+                        <li class="list-inline-item"><a href="lienhe.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Liên hệ</a>
+                        </li>
+                        <li class="list-inline-item"><a href="gioithieu.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Giới
+                                thiệu</a>
+                        </li>
+                        <li class="list-inline-item"><a href="sitemap.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="header__sort-list">
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link header__sort-link-active">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="app__container mt-3">
+                <div class="container">
+                    <div class="row fs-14 bg-white">
+                        <div class="col-12 mb-3">
+                            <span><a href="/" class="text-decoration-none fs-14">Điện thoại</a></span>
+                            <span>&nbsp;<i class="fas fa-angle-right"></i>&nbsp;</span>
+                            <span><a href="/" class="text-decoration-none fs-14">Điện thoại Samsung</a></span>
+                        </div>
+                        <div class="col-12">
+                            <span class="text-dark fs-18 fw-bold">Điện thoại Samsung Galaxy A12 (4GB/128GB) </span>
+                            <span>&nbsp;</span>
+                            <i class="home-product-item-star-gold fas fa-star fs-14"></i>
+                            <i class="home-product-item-star-gold fas fa-star"></i>
+                            <i class="home-product-item-star-gold fas fa-star"></i>
+                            <i class="home-product-item-star-gold fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </span>
+                            <span>&nbsp;&nbsp;</span>
+                            <span><a href="#" class="text-decoration-none fs-14 fw-bold">111 đánh giá</a></span>
+                        </div>
+                        <div class="col-7 mt-3">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade border"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/img/productdetails/11samsung-galaxy-a12-xanh-duong-1-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/22samsung-galaxy-a12-xanh-duong-2-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/33samsung-galaxy-a12-xanh-duong-3-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/44samsung-galaxy-a12-xanh-duong-4-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/55samsung-galaxy-a12-xanh-duong-5-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/66samsung-galaxy-a12-xanh-duong-6-2-org.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/1vi-vn-samsung-galaxy-a12-cauhinh-6gb.jpg"
+                                            class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/2vi-vn-samsung-galaxy-a12-camerasau.jpg"
+                                            class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/3vi-vn-samsung-galaxy-a12-macro.jpg"
+                                            class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/4vi-vn-samsung-galaxy-a12-xoaphong.jpg"
+                                            class="d-block w-100" alt="Slide 4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/5vi-vn-samsung-galaxy-a12-sieurong.jpg"
+                                            class="d-block w-100" alt="Slide 5">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/6vi-vn-samsung-galaxy-a12-selfie.jpg"
+                                            class="d-block w-100" alt="Slide 6">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/7vi-vn-samsung-galaxy-a12-pin.jpg"
+                                            class="d-block w-100" alt="Slide 7">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/productdetails/8vi-vn-samsung-galaxy-a12-hedieuhanh.jpg"
+                                            class="d-block w-100" alt="Slide 8">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- Thông tin sản phẩm -->
+                            <div class="row my-3">
+                                <div class="col-12">
+                                    <div class="text-center border d-inline-block py-1" style="width: 6rem;
+                                    height: 6.2rem">
+                                        <img src="./assets/img/productdetails/thumbnail_1.jpg"
+                                            class="rounded mw-100 w-100" alt="Samsung Xanh Dương" style="width: 5.6rem;
+                                            height: 5.4rem; ">
+                                    </div>
+                                    <div class="text-center border d-inline-block py-1 ms-2" style="width: 6rem;
+                                    height: 6.2rem">
+                                        <img src="./assets/img/productdetails/thumbnail_den.jpg"
+                                            class="rounded mw-100 w-100" alt="Samsung Xanh Dương" style="width: 5.6rem;
+                                            height: 5.4rem; ">
+                                    </div>
+                                    <div class="text-center border d-inline-block py-1 ms-2" style="width: 6rem;
+                                    height: 6.2rem">
+                                        <img src="./assets/img/productdetails/thumbnail_trang.jpg"
+                                            class="rounded mw-100 w-100" alt="Samsung Xanh Dương" style="width: 5.6rem;
+                                            height: 5.4rem; ">
+                                    </div>
+
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>
+                                                <span><img class="img-thumbnail" src="./assets/img/icon/security.PNG"
+                                                        alt="Security"></span>&nbsp;Bảo hành <b>chính hãng điện thoại 1
+                                                    năm</b>
+
+                                            </p>
+                                            <p class="fs-14"><a href="#" class="text-decoration-none">Xem Điện thoại
+                                                    Samsung
+                                                    Galaxy A12 (4GB/128GB) cũ giá dưới </a> <b
+                                                    class="text-danger">3.410.000₫</b><span
+                                                    class="badge bg-light text-dark">&nbsp;Tiết kiệm 20%</span></p>
+                                        </div>
+                                        <div class="col-12">
+                                            <img src="./assets/img/productdetails/samsung_01.jpg" class="d-block w-100"
+                                                alt="Slide 7">
+                                            <div class="article__content short">
+                                                <h3 class="fs-20 pb-4">Bài viết đánh giá</h3>
+                                                <h3 class="lh-26 fs-20 pb-2"><a
+                                                        title="Tham khảo sản phẩm Samsung tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/samsung" target="_blank"
+                                                        rel="noopener" class="text-decoration-none">Samsung</a> chính
+                                                    thức cho ra mắt chiếc điện
+                                                    thoại <a
+                                                        title="Tham khảo sản phẩm Samsung Galaxy A12 tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd/samsung-galaxy-a12"
+                                                        target="_blank" rel="noopener"
+                                                        class="text-decoration-none">Galaxy A12</a>, là phiên bản kế
+                                                    nhiệm của <a
+                                                        title="Tham khảo sản phẩm Samsung Galaxy A11 tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd/samsung-galaxy-a11"
+                                                        target="_blank" rel="noopener"
+                                                        class="text-decoration-none">Galaxy A11</a> trước đó. Đối với
+                                                    phiên bản mới, hãng ưu ái cải tiến cụm camera và viên pin cho dung
+                                                    lượng xuất sắc.</h3>
+                                                <h3 class="fs-20 py-3">Thiết kế rắn chắc, quen thuộc</h3>
+                                                <p>Samsung Galaxy A12 mang diện mạo thân thuộc của những chiếc Samsung
+                                                    tiền nhiệm. Với thiết kế nguyên khối, lớp vỏ máy được đúc bao quanh
+                                                    thân máy chắc chắn, bền chặt. Phần camera trước được đặt trong notch
+                                                    hình giọt nước giúp tăng diện tích cho màn hình.</p>
+                                                <p>
+                                                    <div>
+                                                        <img src="./assets/img/productdetails/samsung_02.jpg"
+                                                            class="mb-3 d-block w-100" alt="Slide 7">
+                                                    </div>
+                                                </p>
+                                                <p>Cụm 4 camera sau ở góc bên trái, nằm gọn trong khung hình vuông viền
+                                                    cong cân đối và tinh tế. Các cạnh và khung viền được làm cong nhẹ
+                                                    mềm mại cho cảm giác cầm nắm sử dụng đầm tay.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_03.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <p>Samsung Galaxy A12 được trang bị <a
+                                                        title="Tham khảo điện thoại có bảo mật vân tay tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd-bao-mat-van-tay"
+                                                        target="_blank" rel="noopener" class="text-decoration-none">cảm
+                                                        biến&nbsp;vân tay</a> cạnh
+                                                    viền tích hợp với nút nguồn giúp tối ưu không gian mặt trước của
+                                                    máy. Thuận tiện cho việc mở <a
+                                                        title="Tham khảo các sản phẩm điện thoại tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd" target="_blank"
+                                                        rel="noopener" class="text-decoration-none">điện thoại</a> của
+                                                    bạn trở nên nhanh chóng.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_04.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <h3>Chất lượng màn hình ổn định</h3>
+                                                <p>Chiếc điện thoại sử dụng màn hình PLS&nbsp;TFT LCD có độ phân giải
+                                                    HD+ (720 x 1600 pixels)&nbsp;đáp ứng khá tốt nhu cầu hiển thị cơ bản
+                                                    với chất lượng ổn định. Kích thước màn hình 6.5 inch cho những trải
+                                                    nghiệm trên máy thêm rộng rãi, rõ ràng hơn.&nbsp;</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_05.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <h3>Cụm 4 camera hỗ trợ chụp ảnh đa tính năng</h3>
+                                                <p>Thiết bị sở hữu cụm 4 camera sau bao gồm: Cảm biến chính lên đến 48
+                                                    MP, <a
+                                                        title="Tham khảo điện thoại có camera góc siêu rộng tại Thegioididong.com "
+                                                        href="https://www.thegioididong.com/dtdd-camera-goc-rong"
+                                                        target="_blank" rel="noopener"
+                                                        class="text-decoration-none">camera góc siêu rộng</a> 5 MP,
+                                                    camera 2 MP cảm biến độ sâu và <a
+                                                        title="Tham khảo điện thoại có camera macro tại Thegioididong.com "
+                                                        href="https://www.thegioididong.com/dtdd-camera-macro"
+                                                        target="_blank" rel="noopener"
+                                                        class="text-decoration-none">camera macro</a> 2 MP.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_06.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <p>Sự kết hợp này tạo thành chiếc máy ảnh hoàn hảo dễ dàng lưu lại những
+                                                    khoảnh khắc đáng nhớ của bạn đầy rực rỡ. Ngoài ra máy còn hỗ trợ
+                                                    quay video Full HD cùng nhiều tính năng khác giúp bạn tạo nên vô vàn
+                                                    những bức ảnh đẹp nhanh chóng.&nbsp;</p>
+                                                <p> </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_07.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <p>Mặt trước là màn hình kiểu thiết kế giọt nước chứa camera selfie có
+                                                    độ phân giải 8 MP dễ dàng chụp lại những tấm ảnh đẹp mà không cần
+                                                    chỉnh sửa nhiều và tự tin hơn khi video call cùng bạn bè mọi nơi.
+                                                </p>
+                                                <h3>Cung cấp sức mạnh bởi MediaTek Helio G35 8 nhân</h3>
+                                                <p>Galaxy A12 được trang bị con chip MediaTek Helio G35 8 nhân giúp cho
+                                                    máy hoạt động mạnh mẽ, xử lý các thao tác dễ dàng cũng như giải trí
+                                                    xem phim tốt và đặc biệt là khả năng chơi game trên điện thoại mượt
+                                                    mà và ổn định.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_08.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <p>Máy hỗ trợ các tùy chọn kết nối như: 2 Nano SIM và mạng di động <a
+                                                        title="Mạng dữ liệu di động 4G là gì?"
+                                                        href="https://www.thegioididong.com/hoi-dap/4g-la-gi-731757"
+                                                        target="_blank" rel="noopener"
+                                                        class="text-decoration-none">4G</a> để truy cập trang web đọc
+                                                    báo, tải ứng dung, phim ảnh giải trí và mức <a
+                                                        title="Tham khảo điện thoại có RAM từ 4GB đến 64GB tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd-ram-4-den-6gb"
+                                                        target="_blank" rel="noopener" class="text-decoration-none">RAM
+                                                        4 GB</a>&nbsp;cho máy đa
+                                                    nhiệm ổn đi kèm với&nbsp;<a
+                                                        title="Tham khảo điện thoại có ROM từ 128GB đến 256GB tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd-rom-128-den-256gb"
+                                                        target="_blank" rel="noopener" class="text-decoration-none">bộ
+                                                        nhớ trong 128 GB</a>&nbsp;phục
+                                                    vụ tốt nhu cầu lưu dữ liệu, thông tin cần thiết của người dùng.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_09.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <h3>Pin "trâu" ấn tượng</h3>
+                                                <p>Một điểm cộng lớn của Galaxy A12 là dung lượng viên pin 5000 mAh vừa
+                                                    được cải tiến của máy xứng đáng được gọi là <a
+                                                        title="Tham khảo điện thoại pin trâu chính hãng tại Thegioididong.com "
+                                                        href="https://www.thegioididong.com/dtdd-pin-khung"
+                                                        target="_blank" rel="noopener" class="text-decoration-none">điện
+                                                        thoại pin trâu</a>. Giờ đây,
+                                                    smartphone vẫn luôn có khả năng đáp ứng tốt bất kì hoạt động sử dụng
+                                                    nào của bạn cả ngày dài.</p>
+                                                <p>
+                                                </p>
+                                                <div>
+                                                    <img src="./assets/img/productdetails/samsung_10.jpg"
+                                                        class="mb-3 d-block w-100" alt="Slide 7">
+                                                </div>
+                                                <p>Ngoài ra, Galaxy A12 còn được trang bị công nghệ <a
+                                                        title="Tham khảo điện thoại có sạc pin nhanh tại Thế Giới Di Động"
+                                                        href="https://www.thegioididong.com/dtdd-sac-pin-nhanh"
+                                                        target="_blank" rel="noopener" class="text-decoration-none">sạc
+                                                        pin nhanh</a> 15 W giúp nạp
+                                                    đầy năng lượng cho điện thoại nhanh chóng hơn.</p>
+                                                <p>Một hiệu năng mạnh, một viên pin tốt cùng một chiếc máy ảnh đẹp mắt
+                                                    mà Samsung Galaxy A12 sở hữu cũng như là những tiêu chí người dùng
+                                                    tin chọn đầu tiên. Hứa hẹn là mẫu sản phẩm đem lại cảm giác trải
+                                                    nghiệm ấn tượng đến bạn.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 mt-3">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item bd-thuonghieu" role="presentation" style="border-radius: 0;">
+                                    <button class="nav-link active fs-14 min-w100"
+                                        style="min-width: 6rem; border-radius: 0;" id="pills-4gb-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-4gb1" type="button" role="tab"
+                                        aria-controls="pills-4gb1" aria-selected="true">4GB</button>
+                                </li>
+                                <li class="nav-item bd-thuonghieu" role="presentation" style="border-radius: 0;">
+                                    <button class="nav-link fs-14 min-w100" style="min-width: 6rem; border-radius: 0;"
+                                        id="pills-6gb-tab" data-bs-toggle="pill" data-bs-target="#pills-6gb2"
+                                        type="button" role="tab" aria-controls="pills-6gb2"
+                                        aria-selected="true">6GB</button>
+                                </li>
+                            </ul>
+                            <span>Giá tại <a href="#" class="text-decoration-none fs-14">Hồ Chí Minh</a></span> &nbsp <i
+                                class="fas fa-angle-down"></i>
+                            <ul class="nav nav-pills mb-3 mt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item bd-thuonghieu" role="presentation" style="border-radius: 0;">
+                                    <button class="nav-link active fs-14 min-w100"
+                                        style="min-width: 8rem; border-radius: 0;" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">
+                                        <span><i class="fas fa-home"></i>&nbsp;Mua tại cửa hàng</span>
+                                        <br>
+                                        <span class="pt-2">3.890.000₫</span>
+                                        <br>
+                                        <span><strike>4.290.000₫ </strike>-9%</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item bd-thuonghieu" role="presentation" style="border-radius: 0;">
+                                    <button class="nav-link fs-14 min-w100" style="min-width: 6rem; border-radius: 0;"
+                                        id="pills-6gb-tab" data-bs-toggle="pill" data-bs-target="#pills-oln"
+                                        type="button" role="tab" aria-controls="pills-oln" aria-selected="true">
+                                        <span><i class="fas fa-dollar-sign"></i>&nbsp;Mua Online giá rẻ</span>
+                                        <br>
+                                        <span>3.660.000</span>
+                                        <br>
+                                        <span><strike>4.290.000₫</strike> -14%</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="rounded-2 px-3 py-2 border" style="background: 
+                                            #f6f6f6;">
+                                                <span class="text-dark fs-14 fw-bold">Khuyễn mãi</span>
+                                                <br>
+                                                <span class="fs-14" style="color: black;">Giá và khuyến mãi dự kiến áp
+                                                    dụng đến 23:00
+                                                    23/06</span>
+                                            </div>
+                                            <div class="rounded-2 px-3 py-2 border border-top-0">
+                                                <span class="nb">1</span> <span>&nbsp;</span>
+                                                <span class="fs-14" style="color: black;">Tặng ngay 100GB Data 4G
+                                                    Viettel <a href="#" class="text-decoration-none fs-14 fw-bold">Xem
+                                                        chi
+                                                        tiết</a></span>
+                                            </div>
+                                            <div>
+                                                <span class="fs-16 text-success text-uppercase fw-bold py-3">Còn
+                                                    hàng</span>
+                                            </div>
+                                            <div>
+                                                <span class="fs-14 fw-bold py-3">
+                                                    <span><i class="fas fa-laptop-house"></i></span> &nbsp;
+                                                    <a href="#" class="text-decoration-none">Xem siêu thị còn
+                                                        hàng</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-light form-control form-control-lg fs-16 text-white"
+                                                    style="background:#fb6e2e; min-height: 5rem">MUA
+                                                    NGAY</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary form-control form-control-md fs-14 text-center"
+                                                    style="background:#2f80ed; min-height: 5.6rem">
+                                                    <span>MUA TRẢ GÓP 0% </span>
+                                                    <br>
+                                                    <span>Duyệt hồ sơ trong 5 phút</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary form-control form-control-md fs-14 text-center"
+                                                    style="background:#2f80ed; min-height: 5.6rem">
+                                                    <span>TRẢ GÓP QUA THẺ </span>
+                                                    <br>
+                                                    <span>Visa, Mastercard, JCP</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="py-3 text-center">
+                                                <span class="fs-14">Gọi đặt mua <a href="#"
+                                                        class="text-decoration-none fs-14">1800.1060</a> (7:30 -
+                                                    22:00)</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header" style="background: #f6f6f6;">
+                                                    <span class="fw-bold">1 ưu đãi thêm</span>
+                                                </div>
+                                                <div class="card-body">
+
+                                                    <h5 class="card-title">
+                                                        <span><i class="fas fa-gift" style="color: #ff6960;"></i></span>
+                                                        <span>&nbsp;</span>
+                                                        Tặng cho khách lần đầu mua hàng online tại
+                                                        web <a href="#"
+                                                            class="text-decoration-none fs-14">BachhoaXANH.com</a></h5>
+                                                    <ul style="padding-left: 4.2rem;">
+                                                        <li>Mã giảm 20% tối đa 100.000đ</li>
+                                                        <li>5 lần FREEship</li>
+                                                    </ul>
+                                                    <p class="card-text" style="padding-left: 2.8rem;">Áp dụng tại
+                                                        Tp.HCM và 1 số khu vực, 1 SĐT nhận
+                                                        1 lần (Xem chi tiết)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" tab-pane fade show active" id="pills-oln" role="tabpanel"
+                                    aria-labelledby="pills-oln-tab">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="rounded-2 px-3 py-2 border" style="background: 
+                                        #fdf2f3;">
+                                                <span class="text-dark fs-14 fw-bold">Khuyễn mãi</span>
+                                                <br>
+                                                <span class="fs-14" style="color: black;">Hỗ trợ mùa dịch (Áp dụng từ 04
+                                                    - 30/06):</span>
+                                                <ul style="padding-left: 4.2rem;">
+                                                    <li>Giao hàng nhanh chóng (tuỳ khu vực).</li>
+                                                    <li>Chính sách bảo hành, đổi trả áp dụng như mua giá thường.</li>
+                                                    <li>Mỗi số điện thoại chỉ mua 1 sản phẩm trong 1 tháng.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-3">
+                                            <p>Giá và khuyến mãi dự kiến áp dụng đến 23:00 14/06</p>
+                                            <div>
+                                                <span class="fs-16 text-success text-uppercase fw-bold py-1">Còn
+                                                    hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-danger form-control form-control-lg fs-16 text-white"
+                                                    style="min-height: 6rem;">
+                                                    <span class="fw-bold">MUA NGAY GIÁ RẺ 3.660.000₫</span>
+                                                    <br>
+                                                    <span style="font-size: 1.2rem;">Chỉ áp dụng giao hàng tận
+                                                        nơi</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary form-control form-control-md fs-14 text-center"
+                                                    style="background:#2f80ed; min-height: 5.6rem">
+                                                    <span>MUA TRẢ GÓP 0% </span>
+                                                    <br>
+                                                    <span>Duyệt hồ sơ trong 5 phút</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary form-control form-control-md fs-14 text-center"
+                                                    style="background:#2f80ed; min-height: 5.6rem">
+                                                    <span>TRẢ GÓP QUA THẺ </span>
+                                                    <br>
+                                                    <span>Visa, Mastercard, JCP</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="py-3 text-center">
+                                                <span class="fs-14">Gọi đặt mua <a href="#"
+                                                        class="text-decoration-none fs-14">1800.1060</a> (7:30 -
+                                                    22:00)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-dark fw-bold fs-20">Cấu hình Điện thoại Samsung Galaxy A12
+                                        (4GB/128GB)</p>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                        #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Màn hình:</span></div>
+                                            <div class="col-8"><span class="fs-14">PLS TFT LCD6.5"HD+</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Hệ điều hành:</span></div>
+                                            <div class="col-8"><span class="fs-14">Android 10</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                        #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Màn hình:</span></div>
+                                            <div class="col-8"><span class="fs-14">PLS TFT LCD6.5"HD+</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Camera sau:</span></div>
+                                            <div class="col-8"><span class="fs-14">Chính 48 MP & Phụ 5 MP, 2 MP, 2
+                                                    MP</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                        #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Camera trước:</span></div>
+                                            <div class="col-8"><span class="fs-14">8MP</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Chip:</span></div>
+                                            <div class="col-8"><span class="fs-14">MediaTek Helio G35</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                        #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">RAM:</span></div>
+                                            <div class="col-8"><span class="fs-14">4GB</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Bộ nhớ trong:</span></div>
+                                            <div class="col-8"><span class="fs-14">128GB</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">SIM:</span></div>
+                                            <div class="col-8"><span class="fs-14">2 Nano SIMHỗ trợ 4G</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-14">Pin, Sạc:</span></div>
+                                            <div class="col-8"><span class="fs-14">5000 mAh15 W</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-center my-3">
+                                        <button type="button"
+                                            class="btn btn-outline-primary btn-xemcauhinh form-control form-control-lg"
+                                            data-bs-toggle="modal" data-bs-target="#xemCauHinhChiTiet"><a href="#"
+                                                class="fs-14 fw-bold text-decoration-none">Xem
+                                                thêm cấu hình chi
+                                                tiết &nbsp; <i class="fas fa-caret-right"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm liên quan -->
+                        <div class="row mt-3 mb-3">
+                            <div class="col-12 pt-3 border-bottom">
+                                <h3 class="text-uppercase">Sản phẩm liên quan</h3>
+                            </div>
+                            <div class="row sm-gutter mt-4">
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/oppo-reno5-marvel-thumb-600x600-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">OPPO Reno5 Marvel
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">9.690.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">8.230.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">120 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-15%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/samsung-galaxy-z-fold-2-vang-dong-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Samsung Galaxy Z Fold2 5G
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">50.000.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">14 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-0%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/oppo-find-x3-pro-black-001-1-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">OPPO Find X3 Pro 5G
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">26.990.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">20 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-0%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/iphone-12-pro-bac-new-600x600-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">iPhone 12 Pro 128GB
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">30.490.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">26.990.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">70 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-12%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/realme-c12-do-13-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Realme C12
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">3.490.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">3.290.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">12 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-7%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Samsung Galaxy Note 20
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">23.990.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">15.490.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">26 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-33%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/oppo-a93-trang-14-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">OPPO A93
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">6.490.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">5.990.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">81 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-16%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                    <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                        <div class="home-product-item-img"
+                                            style="background-image: url(./assets/img/bestseller/xiaomi-mi-11-lite-4g-blue-600x600.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Xiaomi 11 Lite
+                                        </h4>
+                                        <div class="home-product-item__price justify-cont">
+                                            <span class="home-product-item__price-old fs-14">7.990.000₫</span>
+                                            <span
+                                                class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                style="padding-right: 1rem;">7.090.000₫</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="home-product-item-star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">711 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">-11%</span>
+                                            <span class="home-product-item__label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+
+        <footer class="footer">
+            <div class="grid wide footer__content~">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">
+                            <b>Lịch sử mua hàng</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Cộng tác bán hàng cùng TGDĐ</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Giới thiệu mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Giới thiệu</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Giới thiệu công ty (MWG.vn)</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tìm siêu thị (2.599 shop)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Tổng đài hỗ trợ</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Gọi mua: 1800.1060</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Kỹ thuật: 1800.1763</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Khiếu nại: 1800.1062</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Bảo hành: 1800.1064</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Social Media</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-facebook"></i>Facebook</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-instagram-square"></i>Instagram</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-linkedin"></i>Linkedin</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            Vào cửa hàng trên ứng dụng
+                        </h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/code.png" alt="QR Code" class="footer__download_qr">
+                            <div class="footer__download-apps">
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/appstore.png" alt="App Store"
+                                        class="footer__download-app-store">
+                                </a>
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/googleplay.png" alt="Google Play"
+                                        class="footer__download-google-play">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom mt-4">
+                <div class="container">
+                    <p class="footer__text">© 2021 SonThuy's, Inc. All Rights Reserved</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center me-auto ms-auto fs-24 fw-bold" id="exampleModalLabel"
+                        style="padding-left: 8.2rem;">ĐĂNG NHÂP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="mb-3 row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control fs-16" id="txtemail" placeholder="Email"
+                                            onblur="kiemTraEmailLogin()" required>
+                                        <span id="errEmail" style="color: red;">(*)</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control fs-16" id="inputPassword"
+                                            placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12 fs-14">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Nhớ mật khẩu
+                                            </label>
+                                            <a href="#" class="text-decoration-none float-end">Quên mật khẩu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer me-auto ms-auto">
+                    <button type="submit" class="btn btn-danger text-uppercase fs-14 fw-bold">Login</button>
+                </div>
+                <div class="modal-footer me-auto ms-auto">
+                    <span>&copy; Login Form. All reserved | Design by <span style="color: blue;">SonThuy</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="xemCauHinhChiTiet" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase text-center fs-20 fw-bold" style="padding-left: 10rem;"
+                        id="staticBackdropLabel">CẤU HÌNH Điện thoại
+                        Samsung Galaxy
+                        A12 (4GB/128GB)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./assets/img/productdetails/samsung_01.jpg" class="d-block w-100" alt="Slide 7">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Màn hình:</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background:#FFFFFF;">
+                                        <div class="row border-bottom pb-2">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Công nghệ màn
+                                                    hình:</span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">PLS TFT LCD</a></span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Độ phân giải:</span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">HD+ (720 x 1600 Pixels)</a></span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Kích thước màn hình:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none text-dark">6.5"</a></span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Tần số quét: </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none text-dark">60 Hz</a></span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Mặt kính cảm ứng: </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">Kính cường lực</a></span></div>
+                                            <div class="my-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Camera sau:</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                #FFFFFF;">
+                                        <div class="row border-bottom pb-2">
+                                            <div class="col-4"><span class="fs-16 fw-bold"><a href="#"
+                                                        class="text-decoration-none">Độ phân giải:</a></span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">Chính 48 MP & Phụ 5 MP, 2 MP, 2
+                                                    MP</span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Quay phim:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">FullHD 1080p@30fps</a></span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Đèn Flash:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">Có</span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Tính năng: </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none text-dark">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Chạm lấy
+                                                                    nét</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Góc rộng
+                                                                    (Wide)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Góc siêu rộng
+                                                                    (Ultrawide)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">HDR</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Làm đẹp</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Nhận diện khuôn
+                                                                    mặt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Siêu cận
+                                                                    (Macro)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Tự động lấy nét
+                                                                    (AF)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Xóa phông</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="text-decoration-none">Zoom kỹ thuật
+                                                                    số</a>
+                                                            </li>
+                                                        </ul>
+                                                    </a></span></div>
+                                            <div class="my-2"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Camera trước:</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background:#FFFFFF;">
+                                        <div class="row border-bottom pb-2">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Độ phân giải:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">8 MP</span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Tính năng: </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">Quay video Full HD</a></span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Hệ điều hành & CPU:</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background:#FFFFFF;">
+                                        <div class="row border-bottom pb-2">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Hệ điều hành:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">Android 10</a></span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Chip xử lý (CPU): </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">MediaTek Helio G35</a></span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Tốc độ CPU:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">8 nhân 2.3 GHz</span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Chip đồ họa (GPU):</span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">IMG PowerVR GE8320</a></span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rounded-2 px-3 py-3" style="background: 
+                                    #f6f6f6;">
+                                        <div class="row">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Thông tin chung:</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-2 px-3 py-3" style="background:#FFFFFF;">
+                                        <div class="row border-bottom pb-2">
+                                            <div class="col-4"><span class="fs-16 fw-bold">Thiết kế:
+                                                </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16"><a href="#"
+                                                        class="text-decoration-none">Nguyên khối</a></span></div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Chất liệu: </span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">Khung & Mặt lưng nhựa</span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Kích thước:</span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">Dài 164 mm - Ngang 75.8 mm - Dày 8.9
+                                                    mm - Nặng 205 g</span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                            <div class="col-4"><span class="fs-16 fw-bold">Thời điểm ra mắt:</span>
+                                            </div>
+                                            <div class="col-8"><span class="fs-16">12/2020
+                                                </span>
+                                            </div>
+                                            <div class="my-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-uppercase fs-14 fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/checkform.js"></script>
+    <script src="./assets/bootstrap-5.0.1/jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/popper.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Boostrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1/css/bootstrap.min.css">
+    <title>Danh sách sản phẩm - QMobile Việt Nam</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item d-flex align-items-center">
+                            <i class="fas fa-store fs-150"></i>&nbsp;
+                            <span class="header__navbar-title--no-pointer header__navbar-item-separate">Cửa hàng</span>
+                        </li>
+
+                        <li
+                            class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate d-flex align-items-center">
+                            <i class="fas fa-mobile-alt"></i>&nbsp;
+                            Tải ứng dụng
+                            <!-- HEADER QR CODE -->
+                            <div class="header__qr">
+                                <img class="header__qr-img" src="./assets/img/code.png" alt="QR CODE">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img class="header__qr-download-img" src="./assets/img/appstore.png"
+                                            alt="App Store">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img class="header__qr-download-img" src="./assets/img/googleplay.png"
+                                            alt="Google Play">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item d-flex align-items-center">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="#" class="header__navbar_icon-link">
+                                <i class="header_navbar-icon fab fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="header__navbar_icon-link">
+                                <i class="header_navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-no ">
+                            <a href="#" class="header__navbar-item-link d-flex align-items-center">
+                                <i class="header_navbar-icon far fa-bell">&nbsp;</i>
+                                Thông báo
+                            </a>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link d-flex align-items-center">
+                                <i class="header_navbar-icon far fa-question-circle">&nbsp;</i>
+                                Trợ giúp
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item header__navbar-item-bold header__navbar-item-separate">
+                            <a href="dangky.html" class="text-decoration-none text-white"><span>Đăng ký</span></a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-bold" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Đăng nhập
+                        </li>
+
+
+                    </ul>
+
+
+                </nav>
+
+                <div class="header-with-search ">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header-mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="head_logo-link">
+                            <img src="./assets/img/logo.png" alt="Qmobile Logo PNG" class="header_logo-link-img">
+                        </a>
+                    </div>
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="mobile__check-header">
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Bạn tìm gì...">
+                            <div class="header__search-history">
+                                <h3 class="header__search-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-list">
+                                    <li class="header__search-item">
+                                        <a href="#">Xiaomi</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="#">Samsung</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="#">iphone 12</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">
+                                Trong nước
+                            </span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            <ul class="header__search-option" style="margin-top: 0.7rem;">
+                                <li class="header__search-option-item header__search-option-item-active">
+                                    <span>Trong nước</span>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài nước</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- Cart Layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list-none-cart-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/nocart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+                                <!-- Has cart:  -->
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/oppo-a93-trang-14-600x600.jpg" alt="Oppo A93"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Điện thoại Samsung Galaxy S21 5G</h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">14.990.000₫</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span class="vt">S21 5G
+                                                        128GB</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/samsung-galaxy-s21.jpg" alt="093.969.6789"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">OPPO A93</h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">9.599.000₫</span>
+                                                    <!-- <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>     -->
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span
+                                                        class="mobi1"></span><span class="mobi2">AMOLED6.43"Full
+                                                        HD+</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/iphone12_pro_max.jpg" alt="Iphone 12 Pro Max"
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Điện thoại iPhone 12 Pro Max 128GB
+                                                </h5>
+                                                <div class="header__cart-item-price-qnt">
+                                                    <span class="header__cart-item-price">30.990.000₫</span>
+                                                    <!-- <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>     -->
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">Loại: <span
+                                                        class="mobi1"></span><span class="mobi2">OLED6.7"Super Retina
+                                                        XDR</span></span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <a class="btn btn--primary btn1">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <ul class="list-inline d-flex align-items-center justify-content-evenly">
+                        <li class="list-inline-item"><a href="/"
+                                class="text-decoration-none fs-16 text-white fw-bold">Trang
+                                chủ</a>
+                        </li>
+                        <li class="list-inline-item"><a href="product.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Điện thoại</a>
+                        </li>
+                        <li class="list-inline-item"><a href="index.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Laptop</a>
+                        </li>
+                        <li class="list-inline-item"><a href="index.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Tablet</a>
+                        </li>
+                        <li class="list-inline-item"><a href="danhsachsanpham.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Danh sách sản phẩm</a>
+                        </li>
+                        <li class="list-inline-item"><a href="lienhe.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Liên hệ</a>
+                        </li>
+                        <li class="list-inline-item"><a href="gioithieu.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Giới
+                                thiệu</a>
+                        </li>
+                        <li class="list-inline-item"><a href="sitemap.html"
+                                class="text-decoration-none fs-16 text-white fw-bold">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="header__sort-list">
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link header__sort-link-active">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="app__container">
+                <div class="container">
+                    <div class="row app__content bg-white">
+                        <div class="row fs-14 bg-white">
+                            <div class="col-12 mb-3">
+                                <span><a href="/" class="text-decoration-none fs-14">Trang chủ</a></span>
+                                <span>&nbsp;<i class="fas fa-angle-right"></i>&nbsp;</span>
+                                <span><a href="danhsachsanpham.html" class="text-decoration-none fs-14">Danh sách sản
+                                        phẩm</a></span>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                            <div class="home-filter hide-on-mobile-tablet">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <button class="home-filter-btn btn fs-14">Phổ biến</button>
+                                <button class="home-filter-btn btn btn--primary fs-14">Mới nhất</button>
+                                <button class="home-filter-btn btn fs-14">Bán chạy</button>
+
+                                <div class="select-input">
+                                    <span class="select-input-price">
+                                        Giá
+                                    </span>
+                                    <i class="select-input-icon fas fa-angle-down"></i>
+                                    <ul class="select-input-list">
+                                        <li class="select-input-item">
+                                            <a href="#" class="select-input-link">Giá: Thấp đến Cao <i
+                                                    class="select-input-item-icon fas fa-arrow-up"></i></a>
+                                        </li>
+                                        <li class="select-input-item">
+                                            <a href="#" class="select-input-link">Giá: Cao đến Thấp <i
+                                                    class="select-input-item-icon fas fa-arrow-down"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="home-filter__paginate">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">1</span>/14
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="#" class="home-filter__page-btn home-filter__page-btn-disable">
+                                            <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="#" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home_product">
+                                <div class="row sm-gutter">
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xam-new-256gb.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 256GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">31.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">28.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">124 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-10%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-xr-hopmoi-den.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone XR 64GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">14.490.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">11.190.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">265 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-0%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/samsung/samsung-galaxy-a02s-trang-600x600-600x600.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">Samsung Galaxy A02s
+                                                (4GB/64GB)
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">Giá rẻ:
+                                                    17.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">2553 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-0%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-11-xanhla-600x600.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 11 128GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">21.490.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">17.990.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">81 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-16%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                        <a href="chitietsanpham.html" class="home-product-item text-decoration-none">
+                                            <div class="home-product-item-img"
+                                                style="background-image: url(./assets/img/iphone/iphone-12-pro-xanh-duong-new-600x600-600x600.jpg);">
+                                            </div>
+                                            <h4 class="home-product-item__name">iPhone 12 Pro 512GB
+                                            </h4>
+                                            <div class="home-product-item__price justify-cont">
+                                                <span class="home-product-item__price-old fs-14">38.990.000₫</span>
+                                                <span
+                                                    class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                    style="padding-right: 1rem;">36.490.000₫</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="home-product-item-star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item-sold">71 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__percent">-6%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <ul class="home_pagination pagination text-dark">
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link">
+                                        <i class="home_pagination-left fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+
+                                <li class="home_pagination-item home_pagination-item-active">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link text-dark">
+                                        14
+                                    </a>
+                                </li>
+
+
+                                <li class="home_pagination-item">
+                                    <a href="#" class="home_pagination-link">
+                                        <i class="home_pagination-right fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="bg-white">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-12 pt-3 border-bottom">
+                                        <h3 class="text-uppercase">Sản phẩm liên quan</h3>
+                                    </div>
+                                    <div class="row sm-gutter mt-4">
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/oppo-reno5-marvel-thumb-600x600-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">OPPO Reno5 Marvel
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">9.690.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">8.230.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">120 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-15%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/samsung-galaxy-z-fold-2-vang-dong-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">Samsung Galaxy Z Fold2 5G
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">50.000.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">14 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-0%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/oppo-find-x3-pro-black-001-1-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">OPPO Find X3 Pro 5G
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">26.990.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">20 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-0%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/iphone-12-pro-bac-new-600x600-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">iPhone 12 Pro 128GB
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">30.490.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">26.990.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">70 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-12%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/realme-c12-do-13-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">Realme C12
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">3.490.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">3.290.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">12 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-7%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">Samsung Galaxy Note 20
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">23.990.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">15.490.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">26 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-33%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/oppo-a93-trang-14-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">OPPO A93
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">6.490.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">5.990.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">81 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-16%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 home-product-item-wrapper">
+                                            <a href="chitietsanpham.html"
+                                                class="home-product-item text-decoration-none">
+                                                <div class="home-product-item-img"
+                                                    style="background-image: url(./assets/img/bestseller/xiaomi-mi-11-lite-4g-blue-600x600.jpg);">
+                                                </div>
+                                                <h4 class="home-product-item__name">Xiaomi 11 Lite
+                                                </h4>
+                                                <div class="home-product-item__price justify-cont">
+                                                    <span class="home-product-item__price-old fs-14">7.990.000₫</span>
+                                                    <span
+                                                        class="home-product-item__price-current text-dark fs-16 float-end fw-bold"
+                                                        style="padding-right: 1rem;">7.090.000₫</span>
+                                                </div>
+                                                <div class="home-product-item__action">
+                                                    <span class="home-product-item__like home-product-item__liked">
+                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="home-product-item__like-icon-full fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="home-product-item__rating">
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="home-product-item-star-gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="home-product-item-sold">711 đã bán</span>
+                                                </div>
+                                                <div class="home-product-item__favorite">
+                                                    <i class="fas fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-item__sale-off">
+                                                    <span class="home-product-item__percent">-11%</span>
+                                                    <span class="home-product-item__label">GIẢM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="grid wide footer__content~">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">
+                            <b>Lịch sử mua hàng</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Cộng tác bán hàng cùng TGDĐ</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tìm hiểu về mua trả góp</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Giới thiệu mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Giới thiệu</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Giới thiệu công ty (MWG.vn)</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Gửi góp ý, khiếu nại</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Tìm siêu thị (2.599 shop)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Tổng đài hỗ trợ</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Gọi mua: 1800.1060</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Kỹ thuật: 1800.1763</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Khiếu nại: 1800.1062</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">Bảo hành: 1800.1064</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            <b>Social Media</b>
+                        </h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-facebook"></i>Facebook</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-instagram-square"></i>Instagram</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link"><i
+                                        class="footer_item-icon fab fa-linkedin"></i>Linkedin</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">
+                            Vào cửa hàng trên ứng dụng
+                        </h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/code.png" alt="QR Code" class="footer__download_qr">
+                            <div class="footer__download-apps">
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/appstore.png" alt="App Store"
+                                        class="footer__download-app-store">
+                                </a>
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/googleplay.png" alt="Google Play"
+                                        class="footer__download-google-play">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom mt-4">
+                <div class="container">
+                    <p class="footer__text">© 2021 SonThuy's, Inc. All Rights Reserved</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center me-auto ms-auto fs-24 fw-bold" id="exampleModalLabel"
+                        style="padding-left: 8.2rem;">ĐĂNG NHÂP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="mb-3 row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control fs-16" id="txtemail" placeholder="Email"
+                                            onblur="kiemTraEmailLogin()" required>
+                                        <span id="errEmail" style="color: red;">(*)</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control fs-16" id="inputPassword"
+                                            placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12 fs-14">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Nhớ mật khẩu
+                                            </label>
+                                            <a href="#" class="text-decoration-none float-end">Quên mật khẩu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer me-auto ms-auto">
+                    <button type="submit" class="btn btn-danger text-uppercase fs-14 fw-bold">Login</button>
+                </div>
+                <div class="modal-footer me-auto ms-auto">
+                    <span>&copy; Login Form. All reserved | Design by <span style="color: blue;">SonThuy</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/checkform.js"></script>
+    <script src="./assets/bootstrap-5.0.1/jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/popper.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
